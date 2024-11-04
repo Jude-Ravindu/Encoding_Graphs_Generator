@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Encoding Graphs</title>
+</head>
+
+<body id="main_body">
+    <div class="container-fluid h-100  w-100">
+        <div class="row h-100 position-relative">
+            <div class="col-12 h-auto">
+                <div class="row blur_background p-1 m-1 my-3 p-md-3 m-md-3 text-center d-flex justify-content-evenly align-items-center">
+                    <span class="col-12 fs-1 text-white text-shadow main-title" style="font-weight: 600;">Encoding Graphs Generator</span>
+                    <input type="text" required spellcheck="false" autocomplete="off"  placeholder="Type Here ( 0 & 1 Only )" class="text-white fs-5 p-2 my-2 m-md-0 px-3 text-center  text-md-start p-md-3 col-10" id="bit_input">
+                    <span class="search_div col-2"><i class="bi bi-file-earmark-bar-graph"  onclick="graphing();"></i></span>
+                </div>
+                <div class="row px-3">
+                    <span class="text-dark p-3 sub-hedding blur_white_background">NRZ Encoding (NRZ-L Encoding)</span>
+                </div>
+
+                <div class="row content p-3 content1" style="height: 15rem;">
+                    <div class="col-12 blur_white_background">
+                        <div class="row h-100 d-flex justify-content-center align-items-center position-relative">
+                            <div class="col-12 h-100 position-absolute ">
+                                <div class="row flex-column  p-3 me-2 pe-5 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="graph_v_line_numbers py-4 ">
+                                        <span>+1</span>
+                                        <span>0</span>
+                                        <span>-1</span>
+                                    </div>
+                                    <div class="graph_v_line"></div>
+                                    <div class="h-100 d-flex align-items-center overflow-x-auto position-relative p-0"
+                                        id="NRZ_graph_lining_div">
+                                        <div class="graph_under_sketch">
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row px-3">
+                    <span class="text-dark p-3 sub-hedding blur_white_background">NRZI Encoding (Non Return to Zero Inverted)</span>
+                </div>
+
+                <div class="row content p-3 content1" style="height: 15rem;">
+                    <div class="col-12 blur_white_background">
+                        <div class="row h-100 d-flex justify-content-center align-items-center position-relative">
+                            <div class="col-12 h-100 position-absolute ">
+                                <div class="row flex-column  p-3 me-2 pe-5 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="graph_v_line_numbers py-4 ">
+                                        <span>+1</span>
+                                        <span>0</span>
+                                        <span>-1</span>
+                                    </div>
+                                    <div class="graph_v_line"></div>
+                                    <div class="h-100 d-flex align-items-center overflow-x-auto position-relative p-0"
+                                        id="NRZI_graph_lining_div">
+                                        <div class="graph_under_sketch">
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row px-3">
+                    <span class="text-dark p-3 sub-hedding blur_white_background">Manchester Encoding</span>
+                </div>
+
+                <div class="row content p-3 content1" style="height: 15rem;">
+                    <div class="col-12 blur_white_background">
+                        <div class="row h-100 d-flex justify-content-center align-items-center position-relative">
+                            <div class="col-12 h-100 position-absolute ">
+                                <div class="row flex-column  p-3 me-2 pe-5 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="graph_v_line_numbers py-4 ">
+                                        <span>+1</span>
+                                        <span>0</span>
+                                        <span>-1</span>
+                                    </div>
+                                    <div class="graph_v_line"></div>
+                                    <div class="h-100 d-flex align-items-center overflow-x-auto position-relative p-0"
+                                        id="MENCHESTER_graph_lining_div">
+                                        <div class="graph_under_sketch">
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                            <div class="graph_under_box">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer  w-100 ">
+                <span>Copyright © Jude Ravindu 2024. All rights reserved.</span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- <footer>
+        
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
