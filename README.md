@@ -2,6 +2,7 @@
 
 This website generates encoding graphs for **NRZ**, **NRZI**, and **Manchester Encoding** schemes. Built with **HTML**, **CSS (Bootstrap)**, and **JavaScript**, it provides a simple and interactive way to visualize different encoding techniques.
 
+
 ## Features
 
 - **NRZ (Non-Return to Zero)** Encoding Graphs
@@ -9,17 +10,16 @@ This website generates encoding graphs for **NRZ**, **NRZI**, and **Manchester E
 - **Manchester** Encoding Graphs
 - Interactive user interface with Bootstrap for styling and responsiveness
 
-## Demo
 
-![Encoding Graphs Generator Demo](demo-image-url.png)
+## GUI
 
-*Replace `demo-image-url.png` with an actual URL or relative path to a screenshot of your site.*
+![image](https://github.com/user-attachments/assets/bfad8542-110a-4504-92fb-c8bb1ac810e1)
+
+---
 
 ## Demo Link
 
-1. Enter the binary data sequence you want to visualize.
-2. Choose the encoding scheme: **NRZ**, **NRZI**, or **Manchester**.
-3. Click **Generate** to view the graph.
+https://jude-ravindu.github.io/Encoding_Graphs_Generator/
 
 ## Built With
 
@@ -27,3 +27,4 @@ This website generates encoding graphs for **NRZ**, **NRZI**, and **Manchester E
 - **CSS** (Bootstrap for styling and layout)
 - **JavaScript** (for logic and graph generation)
 
+---
